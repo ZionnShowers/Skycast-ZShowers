@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SkyCast</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="min-h-screen bg-yellow-200 text-white">
+    <main class="">
+    <!-- <main class="mx-auto max-w-5xl px-6 py-10"> -->
+      <header class="flex bg-sky-500 md:p-6 p-3 justify-between">
+        <h1 class="md:text-[40px] text-[30px]">The Weather App</h1>
+        <form id="search-form" class="md:text-[24px] text-[20px] md:mt-4 mt-3">
+          <button type="submit">Search</button>
+          <input class="bg-gray-300 rounded-4xl" id="city-input" type="text" placeholder="Search a city..." />
+        </form>
+      </header>
+      <p id="status"></p>
+      <section id="today"></section>
+      <!-- <section>
+        <h2>5-Day Forecast</h2>
+        <ul id="forecast"></ul>
+      </section> -->
+      <p id="error" class="text-[30px] flex justify-center text-red-500"></p>
+      <section class="lg:px-56 ">
+      <div class="bg-sky-300 rounded-[100px] md:text-[40px] mt-10 px-13 py-6 flex justify-between text-[30px]">
+        <p id="city" class="px-">City:</p>
+        <p id="state" class="px-">State:</p>
+      </div>
+      <div class="text-[20px] bg-sky-300 rounded-4xl md:text-[30px] mt-10 flex justify-between px-13 py-6 flex-wrap">
+        <img id="weather-icon" src="">
+        <p id="weather">Weather:</p>
+        <p id="temp">Degrees:</p>
+        <p id="temp-max">High:</p>
+        <p id="temp-min">Low:</p>
+        <p id="wind">Wind:</p>
+        <p id="feel-like">Feels Like Temp:</p>
+        <p id="sunrise">Sunrise:</p>
+        <p id="sunset">Sunset:</p>
+        <p id="date">Date:</p>
+      </div>
+      <div class="bg-sky-300 rounded-4xl text-[20px] mt-10 flex justify-evenly px-13 py-6">
+      <section id="forecast" class="mt-4 grid grid-cols-2 gap-4 md:grid-cols-5"></section>
+      </div>
+      </section>
+    </main>
+    <!-- <script src="config.js"></script>   must load first -->
+    <script type="module" src="scripts.js"></script>
+  </body>
+</html>
