@@ -1,0 +1,6 @@
+- Zionn Showers
+- 10-30-2026
+- SkyCast: Build a Weather App
+- Our goal was to create a weather app that can bring weather data from any city and provide the correct information of the day's date and the next 5 days. This was a bit stressful for me, but I think I did enough for what had to be done on time
+- Peer Reviewer:
+- Review:
